@@ -43,9 +43,10 @@ startBtn.addEventListener("click",()=>{
     loading.style.transform="scale(.9)";
     loading.style.opacity="0";
 
-    setTimeout(()=>{
-        alert("✨ Chapter 2 Coming Soon...");
-    },1000);
+setTimeout(() => {
+    loading.style.display = "none";
+    document.getElementById("main-app").style.display = "block";
+}, 1000);    
 
 });
 

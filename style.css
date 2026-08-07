@@ -101,3 +101,31 @@ body{
     inset:0;
     pointer-events:none;
 }
+#main-app{
+    display:none;
+    text-align:center;
+    animation:fadeIn 1s ease;
+    z-index:20;
+}
+
+#main-app h1{
+    color:#ff4da6;
+    font-size:2.3rem;
+    margin-bottom:15px;
+}
+
+#main-app p{
+    color:#fff;
+    font-size:1.1rem;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}

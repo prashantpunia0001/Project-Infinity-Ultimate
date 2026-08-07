@@ -129,3 +129,29 @@ body{
         transform:translateY(0);
     }
 }
+.gallery{
+    margin-top:35px;
+    display:flex;
+    gap:15px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.photo{
+    width:120px;
+    height:120px;
+    border-radius:20px;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.15);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.photo:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 25px rgba(255,77,166,.5);
+}

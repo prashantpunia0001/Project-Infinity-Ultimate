@@ -51,3 +51,14 @@ setTimeout(() => {
 });
 
 });
+function showMemory(id){
+
+    const memories = {
+        1: "❤️ Our First Memory",
+        2: "🌸 Beautiful Moments Together",
+        3: "✨ Forever Begins Here"
+    };
+
+    alert(memories[id]);
+
+}

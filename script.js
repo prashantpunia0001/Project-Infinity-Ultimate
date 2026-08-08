@@ -51,15 +51,20 @@ setTimeout(() => {
 });
 
 });
-function showMemory(id){
-
-    const memories = {
-        1: "❤️ Our First Memory",
-        2: "🌸 Beautiful Moments Together",
-        3: "✨ Forever Begins Here"
+function showMemory(number) {
+    const messages = {
+        1: "Some moments are simply unforgettable ❤️",
+        2: "A beautiful memory that will always stay special 💕",
+        3: "This is just the beginning of our forever ✨❤️"
     };
 
-    alert(memories[id]);
+    document.getElementById("memory-text").textContent = messages[number];
+    document.getElementById("memory-popup").style.display = "flex";
+}
+
+function closeMemory() {
+    document.getElementById("memory-popup").style.display = "none";
+}
 
 }
 function showMemory(number) {

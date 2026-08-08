@@ -62,3 +62,12 @@ function showMemory(id){
     alert(memories[id]);
 
 }
+function showMemory(number) {
+    const messages = {
+        1: "Some moments are simply unforgettable ❤️",
+        2: "A beautiful memory that will always stay special 💕",
+        3: "This is just the beginning of our forever ✨❤️"
+    };
+
+    alert(messages[number]);
+}

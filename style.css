@@ -161,3 +161,59 @@ body{
     object-fit:cover;
     border-radius:20px;
 }
+/* Memory Popup */
+#memory-popup {
+    position: fixed;
+    inset: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.75);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+}
+
+.memory-card {
+    width: 85%;
+    max-width: 380px;
+    padding: 30px 22px;
+    text-align: center;
+    border-radius: 25px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 0 40px rgba(255,70,170,0.4);
+    animation: popupIn 0.4s ease;
+}
+
+.memory-card h2 {
+    color: #ff4da6;
+    margin-bottom: 15px;
+}
+
+.memory-card p {
+    color: white;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.close-memory {
+    margin-top: 20px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(90deg,#ff4da6,#ff8acb);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@keyframes popupIn {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

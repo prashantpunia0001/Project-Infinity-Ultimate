@@ -68,11 +68,26 @@ function closeMemory() {
 
 }
 function showMemory(number) {
-    const messages = {
-        1: "Some moments are simply unforgettable ❤️",
-        2: "A beautiful memory that will always stay special 💕",
-        3: "This is just the beginning of our forever ✨❤️"
+
+    const memories = {
+        1: {
+            image: "assets/images/photo1.jpg",
+            text: "Some moments are simply unforgettable ❤️"
+        },
+
+        2: {
+            image: "assets/images/photo2.jpg",
+            text: "A beautiful memory that will always stay special 💕"
+        },
+
+        3: {
+            image: "assets/images/photo3.jpg",
+            text: "This is just the beginning of our forever ✨❤️"
+        }
     };
 
-    alert(messages[number]);
+    document.getElementById("memory-image").src = memories[number].image;
+    document.getElementById("memory-text").textContent = memories[number].text;
+
+    document.getElementById("memory-popup").style.display = "flex";
 }
